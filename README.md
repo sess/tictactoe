@@ -28,7 +28,7 @@ In this unit, coders will create the classic game of tic tac toe in their brower
 
 - [ ] Implement behavior that will change the turns of the player. Do this by writing a function that will change the current player to either "X" or "O" depending on the current player. Decide where to put this function. 
 - [ ] Create a variable that keeps track of the total number of turns taken
-= [ ] Implement behavior that will make the game Draw after 9 pieces are placed. Do this by writing a function that will add 1 to the current turns, and check if that counter has reached 9. 
+- [ ] Implement behavior that will make the game Draw after 9 pieces are placed. Do this by writing a function that will add 1 to the current turns, and check if that counter has reached 9. 
 - [ ] Create a variable of boolean type that will signal whether or not the game has ended.
 - [ ] Implement behavior that will stop the game after a Draw occurs. Do this by changing your piece-placing function to check if the game has ended first before placing a piece.
 
@@ -48,10 +48,12 @@ In this unit, coders will create the classic game of tic tac toe in their brower
 #### Wrap
 - [ ] Push your changes!
 
-## Challenge Extensions:
-
-- [ ] Change the board to be 5x5 and end the game when there is a 5 in a row (Difficulty: 4/5)
-- [ ] Change the 9 button functions to instead be one generic function on the button selector (Difficulty: 5/5) 
+## Project Extensions:
+- [ ] Add in your own css to personalize your project
+- [ ] Create a button that will reset the game back to the original (this requires clearing the Xs and Os, and putting the "move" buttons back)
+- [ ] Keep track of the score bewteen the two players: X wins, O wins, and draws
+- [ ] Change the 9 button functions to instead be one generic function on the button selector 
+- [ ] Change the board to be 4x4 and end the game when there is a 4 in a row
 
 ## References/Tools
 * [Advanced Reference Table]()
