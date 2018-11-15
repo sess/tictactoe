@@ -1,35 +1,60 @@
-# Tic Tac Toe Project
-Overview:
-In this unit, coders will create a game to simulate guessing a safe's code. The game will generate a safe code consisting of 4 digits. The user will then enter 4 digits to try and guess the code. The game will then tell the user how many numbers entered are the right number in the correct place and how many numbers were a number that is in the code, but not in the correct place. The user will then try different combinations until they are alerted that they won. To create this project, coders will use jQuery to take user input and display data, the Math Library to generate a random choice, and conditionals to determine the winner.
+# Tic-Tac-Toe Project
 
-Day 1
-Planning
- Complete the project planning document.
-Set-Up
- Go to the repository at https://github.com/juliapohlmann/crackthesafe
- Fork this repository to your github account and clone to a new workspace
- Add, commit, and push your changes
- Make your site live on gh-pages
-HTML
- Add any more HTML elements you will need to the page
-JavaScript
- Add a click handler that displays the value of each number input within the div with the id #userChoice
-Wrap
- Push your changes!
- Save and submit your website using the link on the Daily Session Document.
-Day 2
-Javascript
- Outside of your click handler, declare 4 variables (randomNumber1, randomNumber2, randomNumber3, randomNumber4) and generate a random number for each variable. Be sure to save these as strings though!
- Outside of your click handler, declare 4 variables (numberGuess1, numberGuess2, numberGuess3, numberGuess4) and assign them values of empty strings
- Outside of your click handler, declare 2 variables (numbersCorrect, numbersInPlace) and assign them values of 0
- In your click handler, store each input value in the corresponding numberGuess variable
- In your click handler, display each input value in userChoice
-Wrap
- Push your changes!
-Day 3
-JavaScript
- Write a conditional statement that compares each number to see if the number is correct for that position and to see if the number is correct for any other position
- Display the amount of correct numbers, and how many numbers were in the correct place
- If the correct code was entered, display a message to the user letting them know they won
-Wrap
- Push your changes!
+## Overview: 
+In this unit, coders will create the classic game of tic tac toe in their brower! The user will input moves as player X or O on a tic tac toe board. When a player wins, the game will end and a message will display the winner.
+
+## Day 1
+
+#### Planning
+- [ ] Complete the project planning document.
+#### Set-Up
+- [x] Go to the repository at https://github.com/khdou/tictactoe
+- [ ] Fork this repository to your github account and clone to a new workspace
+- [ ] Add, commit, and push your changes
+- [ ] Make your site live on gh-pages
+
+### JavaScript
+- [ ] Create a variable that keeps track of the current player (either a string of "X" or "O")
+- [ ] Implement behavior to place pieces on the board. Do this by filling in the performLogic(buttonId, tileId) function to remove the button of the corresponding buttonId, and to change the text of the div that is the tileId to the player variable.
+- [ ] Call the performLogic function in every button click handler.
+
+#### Wrap
+- [ ] Push your changes!
+- [ ] Save and submit your website using the link on the Daily Session Document.
+
+## Day 2
+
+### Javascript 
+
+- [ ] Implement behavior that will change the turns of the player. Do this by writing a function that will change the current player to either "X" or "O" depending on the current player. Decide where to put this function. 
+- [ ] Create a variable that keeps track of the total number of turns taken
+= [ ] Implement behavior that will make the game Draw after 9 pieces are placed. Do this by writing a function that will add 1 to the current turns, and check if that counter has reached 9. 
+- [ ] Create a variable of boolean type that will signal whether or not the game has ended.
+- [ ] Implement behavior that will stop the game after a Draw occurs. Do this by changing your piece-placing function to check if the game has ended first before placing a piece.
+
+#### Wrap
+- [ ] Push your changes!
+
+## Day 3
+
+## JavaScript
+- [ ] Implement behavior that will end the game when a player wins. First write a function with 3 parameters of the tileIds, and return if the value of the each of the tileIds are equal to the current player
+- [ ] Next, write a function checkVerticalWins that will call the function above on all of the vertical combinations of tiles
+- [ ] Next, write a function checkHoritzontalWins that will call the function above on all of the horizontal combinations of tiles
+- [ ] Next, write a function checkDiagonalWins that will call the function above on all of the diagonal combinations
+- [ ] In each of the win functions, if the win condition is satisfied, set the end game variable to true, and change the title to "[Player] Wins!"
+- [ ] Determine the appropriate location to place the Win functions
+
+#### Wrap
+- [ ] Push your changes!
+
+## Challenge Extensions:
+
+- [ ] Change the board to be 5x5 and end the game when there is a 5 in a row (Difficulty: 4/5)
+- [ ] Change the 9 button functions to instead be one generic function on the button selector (Difficulty: 5/5) 
+
+## References/Tools
+* [Advanced Reference Table]()
+* [Script Tag](http://javascript.crockford.com/script.html)
+* [How Jquery Works](http://learn.jquery.com/about-jquery/how-jquery-works/)
+* [JQuery Events](http://api.jquery.com/category/events/)
