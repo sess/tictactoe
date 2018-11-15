@@ -48,10 +48,12 @@ In this unit, coders will create the classic game of tic tac toe in their brower
 #### Wrap
 - [ ] Push your changes!
 
-## Challenge Extensions:
-
-- [ ] Change the board to be 5x5 and end the game when there is a 5 in a row (Difficulty: 4/5)
-- [ ] Change the 9 button functions to instead be one generic function on the button selector (Difficulty: 5/5) 
+## Project Extensions:
+- [ ] Add in your own css to personalize your project
+- [ ] Create a button that will reset the game back to the original (this requires clearing the Xs and Os, and putting the "move" buttons back)
+- [ ] Keep track of the score bewteen the two players: X wins, O wins, and draws
+- [ ] Change the 9 button functions to instead be one generic function on the button selector 
+- [ ] Change the board to be 4x4 and end the game when there is a 4 in a row
 
 ## References/Tools
 * [Advanced Reference Table]()
