@@ -1,7 +1,23 @@
+html{
+    text-align:center;
+    font-family: 'Roboto', sans-serif;
+}
+
+.parent{
+    width:100%;
+    display:flex;
+    justify-content:center;
+}
+
+button{
+    cursor:pointer;
+}
+
 .container {
     width:50%;
     display:flex;
     flex-wrap:wrap;
+    font-size:50px;
 }
 
 .tile {
