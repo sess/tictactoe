@@ -11,6 +11,8 @@ html{
 
 button{
     cursor:pointer;
+    border:white 1px solid;
+    background-color:white;
 }
 
 .container {
@@ -23,6 +25,7 @@ button{
 .tile {
     width:23%;
     padding:5%;
+    cursor:pointer;
 }
 
 .right {
