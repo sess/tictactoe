@@ -96,16 +96,23 @@ function checkDraw(){
     console.log(turns);    
 }
 
+function endGame(){
+    if(win == true){
+        $("button").hide();
+    }
+}
+
 function performLogic(buttonId, tileId){
     $(buttonId).hide();
     $(tileId).text(currentPlayer);
     
     playerTurn();
-    
+
     checkVerticalWins();
     checkHorizontalWins();
     checkDiagonalWins();
     checkDraw();
+    endGame();
     
     $(".nOfTurns").text(turns + 1);
 }
